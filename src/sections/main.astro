@@ -1,0 +1,32 @@
+---
+import Container from "../components/Container.astro"
+import ButtonLink from "../components/ButtonLink.astro"
+import GithubIcon from "../components/GithubIcon.astro"
+import MailIcon from "../components/MailIcon.astro"
+import DownloadIcon from "../components/DownloadIcon.astro"
+---
+
+<main>
+    <Container>
+        <h1 class="animate-fade-up animate-once animate-duration-500 mt-24 text-3xl lg:text-4xl uppercase text-blue-300 font-bold text-center">
+            Mario Pérez Pizarro
+        </h1>
+        <h2 class="animate-fade-up animate-once animate-duration-700 animate-delay-200 mt-2 text-xl lg:text-2xl text-zinc-100 font-medium text-center">
+            Desarrollador frontend en Badajoz, España
+        </h2>
+        <section class="animate-fade-up animate-once animate-duration-700 animate-delay-500 w-full flex items-center justify-center gap-4 mt-8">
+            <ButtonLink href="https://github.com/mperezpizarro">
+                <GithubIcon class="text-xl" />
+                <span class="font-medium">mperezpizarro</span>
+            </ButtonLink>
+            <ButtonLink href="/CV.pdf" download="Mario Pérez Pizarro - CV.pdf">
+                <DownloadIcon class="text-xl" />
+                Descargar CV
+            </ButtonLink>
+            <ButtonLink href="mailto:marioperezpizarro@gmail.com">
+                <MailIcon class="text-xl" />
+                marioperezpizarro@gmail.com
+            </ButtonLink>
+        </section>
+    </Container>
+</main>

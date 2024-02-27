@@ -1,0 +1,17 @@
+---
+interface Props {
+    href: string,
+    external?: boolean,
+    download?: string;
+}
+
+const {href, external, download} = Astro.props
+const classList = "hover:opacity-85 transition flex items-center gap-2 px-3 py-2 border border-[#4e4e4e] bg-[#2e2e2e] text-slate-100 rounded-md"
+---
+
+{!download && <a href={href} target={external ? '_blank' : '_self'} class={classList}>
+    <slot />
+</a>}
+{download && <a href={href} target={external ? '_blank' : '_self'} download={download} class={classList}>
+    <slot />
+</a>}
