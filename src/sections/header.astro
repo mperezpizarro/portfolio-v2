@@ -1,0 +1,15 @@
+---
+import Navbar from "../components/Navbar.vue"
+import Container from "../components/Container.astro"
+---
+
+<header class="w-full flex items-center border-b border-cGray/50 bg-cGray/20 backdrop-blur sticky mb-3 z-20">
+    <Container>
+        <nav class="w-full flex items-center justify-between px-4 py-2">
+            <picture>
+                <img src="/logo.png" alt="Logotipo de la página web." class="w-full max-w-44" />
+            </picture>
+            <Navbar client:load />
+        </nav>
+    </Container>
+</header>
