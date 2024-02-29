@@ -1,5 +1,4 @@
 TODO
 
-- Footer
 - Experiencia
 - Proyectos

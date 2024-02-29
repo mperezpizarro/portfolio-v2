@@ -1,0 +1,73 @@
+---
+import Container from "../components/Container.astro"
+import GithubIcon from "../components/GithubIcon.astro"
+import MailIcon from "../components/MailIcon.astro"
+import DownloadIcon from "../components/DownloadIcon.astro"
+---
+
+<footer class="w-full flex items-center mt-10 border-t border-cGray/50 bg-cGray/20">
+    <Container>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-slate-100">
+            <ul>
+                <li class="w-full mt-3 mb-5 text-lg font-semibold text-center">
+                    SOBRE MÍ
+                </li>
+                <li class="w-full my-3">
+                    <a href="https://github.com/mperezpizarro" class="flex items-center  justify-center gap-x-1 text-2xl font-normal">
+                        <GithubIcon />
+                        <span class="text-base">mperezpizarro</span>
+                    </a>
+                </li>
+                <li class="w-full my-3">
+                    <a href="/CV.pdf" download="Mario Pérez Pizarro - CV.pdf" class="flex items-center justify-center gap-x-1 text-2xl font-normal">
+                        <DownloadIcon />
+                        <span class="text-base">Descarga mi CV</span>
+                    </a>
+                </li>
+                <li class="w-full my-3">
+                    <a href="mailto:marioperezpizarro@gmail.com" class="flex items-center justify-center gap-x-1 text-2xl font-normal">
+                        <MailIcon />
+                        <span class="text-base">marioperezpizarro@gmail.com</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="w-full mt-3 mb-5 text-lg font-semibold text-center">
+                    MENÚ
+                </li>
+                <li class="w-full my-3">
+                    <a href="#inicio" class="flex items-center justify-center text-center">
+                        Inicio
+                    </a>
+                </li>
+                <li class="w-full my-3">
+                    <a href="#experiencia" class="flex items-center justify-center text-center">
+                        Experiencia
+                    </a>
+                </li>
+                <li class="w-full my-3">
+                    <a href="#proyectos" class="flex items-center justify-center text-center">
+                        Proyectos
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="col-span-full lg:col-span-1">
+                <li class="w-full mt-3 mb-5 text-lg font-semibold text-center">
+                    PROYECTOS INTERÉS
+                </li>
+                <li class="w-full my-3">
+                    <a href="https://dr4fty-md-viewer.vercel.app/" class="flex items-center justify-center text-center">
+                        MD Viewer
+                    </a>
+                </li>
+                <li class="w-full my-3">
+                    <a href="https://shiba-cards.netlify.app/" class="flex items-center justify-center text-center">
+                        Shiba Cards
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </Container>
+</footer>

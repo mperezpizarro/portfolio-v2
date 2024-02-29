@@ -1,5 +1,6 @@
 ---
 import Header from '../sections/header.astro';
+import Footer from '../sections/footer.astro';
 
 interface Props {
 	title: string,
@@ -22,6 +23,7 @@ const { title, description } = Astro.props;
 	<body>
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
