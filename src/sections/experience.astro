@@ -1,0 +1,53 @@
+---
+import Container from "../components/Container.astro";
+import TimelineContainer from "../components/TimelineContainer.astro";
+import TimelineDate from "../components/TimelineDate.astro";
+---
+
+<section id="experiencia" class="w-full mt-24 animate-fade-up animate-duration-300 animate-delay-700">
+    <Container>
+        <h2 class="text-center text-3xl font-bold text-blue-300 uppercase my-10">Experiencia</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <article class="bg-cGray/50 px-4 py-8 rounded-lg border-cGray/50 border">
+                <h3 class="mb-6 text-blue-300 text-xl font-semibold">EDUCACIÓN FORMAL</h2>
+                <TimelineContainer>
+                    <TimelineDate
+                    time="2022 - 2023"
+                    title="Curso del SEXPE"
+                    description="Diseño y confección de páginas web."
+                    />
+                    <TimelineDate
+                        time="2022"
+                        title="Curso de Microsoft Learn"
+                        description="Compilación de aplicaciones Javascript con Typescript."
+                    />
+                    <TimelineDate
+                        time="2020 - 2022"
+                        title="FP de grado superior"
+                        description="Desarrollo de Aplicaciones Web (DAW)."
+                    />
+                </TimelineContainer>
+            </article>
+            <article class="bg-cGray/50 px-4 py-8 rounded-lg border-cGray/50 border">
+                <h3 class="mb-6 text-blue-300 text-xl font-semibold">EXPERIENCIA LABORAL</h2>
+                <TimelineContainer>
+                    <TimelineDate
+                        time="2023 - Actualidad"
+                        title="Trabajo a media jornada en Marna Studio"
+                        description="Creación de páginas web con Wordpress y Elementor, y bases de datos de productos para tiendas online."
+                    />
+                    <TimelineDate
+                        time="2023"
+                        title="Prácticas laborales en Marna Studio"
+                        description="Creación de páginas web con Wordpress y Elementor, y bases de datos de productos para tiendas online."
+                    />
+                    <TimelineDate
+                        time="2022"
+                        title="Prácticas laborales en Canal Cúbico"
+                        description="Proyecto de aprendizaje de React y la API de Google Maps, y lecciones de Docker e Ionic."
+                    />
+                </TimelineContainer>
+            </article>
+        </div>
+    </Container>
+</section>
