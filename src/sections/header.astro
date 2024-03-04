@@ -7,7 +7,9 @@ import Container from "../components/Container.astro"
     <Container>
         <nav class="w-full flex items-center justify-between px-4 py-2">
             <picture>
-                <img src="/logo.png" alt="Logotipo de la página web." class="w-full max-w-44" />
+                <a href="/" class="w-fit">
+                    <img src="/logo.png" alt="Logotipo de la página web." class="w-full max-w-44" />
+                </a>
             </picture>
             <Navbar client:load />
         </nav>
