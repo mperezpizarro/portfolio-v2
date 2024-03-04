@@ -1,0 +1,11 @@
+---
+interface Props {
+    child?: Boolean;
+}
+
+const { child } = Astro.props;
+---
+
+<ul class={`w-full space-y-1 list-disc list-inside text-gray-400 ${child ? 'ml-2' : ''}`}>
+    <slot />
+</ul>

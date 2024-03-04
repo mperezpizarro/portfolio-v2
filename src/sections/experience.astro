@@ -2,6 +2,7 @@
 import Container from "../components/Container.astro";
 import TimelineContainer from "../components/TimelineContainer.astro";
 import TimelineDate from "../components/TimelineDate.astro";
+import ListContainer from "../components/ListContainer.astro";
 ---
 
 <section id="experiencia" class="w-full mt-24 animate-fade-up animate-duration-300 animate-delay-700">
@@ -47,6 +48,39 @@ import TimelineDate from "../components/TimelineDate.astro";
                         description="Proyecto de aprendizaje de React y la API de Google Maps, y lecciones de Docker e Ionic."
                     />
                 </TimelineContainer>
+            </article>
+            <article class="bg-cGray/50 px-4 py-8 rounded-lg border-cGray/50 border col-span-1 md:col-span-2">
+                <h3 class="mb-6 text-blue-300 text-xl font-semibold text-center">TECNOLOGÍAS Y PROGRAMAS CON LOS QUE HE TRABAJADO</h2>
+                <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <article>
+                        <h4 class="font-semibold text-slate-100 text-lg mb-2">Tecnologías web</h4>
+                        <ListContainer child>
+                            <li>HTML 5, CSS 3, Javascript y Typescript</li>
+                            <li>Tailwind CSS</li>
+                            <li>React, Preact y Next JS</li>
+                            <li>Vue 3 y Nuxt 3</li>
+                            <li>Astro</li>
+                            <li>Wordpress y Elementor</li>
+                        </ListContainer>
+                    </article>
+                    <article>
+                        <h4 class="font-semibold text-slate-100 text-lg mb-2">Programas</h4>
+                        <ListContainer child>
+                            <li>Microsoft Office y alternativas similares</li>
+                            <li>Chat GPT</li>
+                            <li>Visual Studio Code</li>
+                            <li>Figma</li>
+                        </ListContainer>
+                    </article>
+                    <article>
+                        <h4 class="font-semibold text-slate-100 text-lg mb-2">Otras habilidades</h4>
+                        <ListContainer child>
+                            <li>Edición básica de imágenes</li>
+                            <li>Edición básica de vídeos</li>
+                            <li>Manejo de sistemas operativos Linux</li>
+                        </ListContainer>
+                    </article>
+                </section>
             </article>
         </div>
     </Container>
