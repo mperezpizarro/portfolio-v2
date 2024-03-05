@@ -1,0 +1,20 @@
+---
+import Container from "../components/Container.astro"
+import ProjectCard from "../components/ProjectCard.astro"
+---
+
+<section id="proyectos" class="w-full mt-12 animate-fade-up animate-duration-300 animate-delay-700">
+    <Container>
+        <h2 class="text-center text-3xl font-bold text-blue-300 uppercase my-10">Proyectos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <ProjectCard
+                name="Shiba Cards"
+                description="Aplicación que muestra imágenes al azar de Shiba Inus gracias a la API de shibe.online."
+                techs={["vue", "tailwind", "API"]}
+                image="/project-1.webp"
+                link="https://shiba-cards.netlify.app/"
+                repoLink="https://github.com/mperezpizarro/shiba-cards"
+            />
+        </div>
+    </Container>
+</section>

@@ -1,3 +1,54 @@
-<span class="hover:opacity-85 transition flex items-center gap-2 px-3 py-2 border border-cGray bg-cGray text-slate-100 rounded-md">
-    <slot />
+---
+import VueIcon from "./icons/VueIcon.astro"
+import NuxtIcon from "./icons/NuxtIcon.astro"
+import ReactIcon from "./icons/ReactIcon.astro"
+import NextIcon from "./icons/NextIcon.astro"
+import TailwindIcon from "./icons/TailwindIcon.astro"
+import TypescriptIcon from "./icons/TypescriptIcon.astro"
+import DefaultTechIcon from "./icons/DefaultTechIcon.astro"
+
+interface Props {
+    name: string;
+}
+
+const { name } = Astro.props;
+
+const techs = ["vue", "nuxt", "react", "preact", "next", "tailwind", "ts"]
+
+const variant = techs.includes(name) ? name : "default"
+---
+
+<span class="flex items-center gap-1 px-2 py-1 border border-cGray bg-cGray text-slate-100 rounded-md text-sm">
+    {variant === "default" &&
+        <DefaultTechIcon class="text-base" />
+        <Fragment>{name}</Fragment>
+    }
+    {variant === "vue" &&
+        <VueIcon class="text-base" />
+        <Fragment>Vue JS</Fragment>
+    }
+    {variant === "nuxt" &&
+        <NuxtIcon class="text-base" />
+        <Fragment>Nuxt</Fragment>
+    }
+    {variant === "react" &&
+        <ReactIcon class="text-base" />
+        <Fragment>React</Fragment>
+    }
+    {variant === "preact" &&
+        <ReactIcon class="text-base" />
+        <Fragment>Preact</Fragment>
+    }
+    {variant === "next" &&
+        <NextIcon class="text-base" />
+        <Fragment>Next JS</Fragment>
+    }
+    {variant === "tailwind" &&
+        <TailwindIcon class="text-base" />
+        <Fragment>Tailwind CSS</Fragment>
+    }
+    {variant === "ts" &&
+        <TypescriptIcon class="text-base" />
+        <Fragment>Typescript</Fragment>
+    }
 </span>
