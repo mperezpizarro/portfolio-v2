@@ -9,11 +9,27 @@ import ProjectCard from "../components/ProjectCard.astro"
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectCard
                 name="Shiba Cards"
-                description="Aplicación que muestra imágenes al azar de Shiba Inus gracias a la API de shibe.online."
+                description="Aplicación que muestra imágenes al azar de Shiba Inus gracias a la API de shibe.online. También permite visualizar la imagen en una nueva pestaña y copiar el enlace de la misma para poder compartirla."
                 techs={["vue", "tailwind", "API"]}
                 image="/project-1.webp"
                 link="https://shiba-cards.netlify.app/"
                 repoLink="https://github.com/mperezpizarro/shiba-cards"
+            />
+            <ProjectCard
+                name="MD Viewer"
+                description="Aplicación que permite escribir notas en formato Markdown y previsualizarlo como HTML con distintos estilos CSS. También permite la opción de copiar y descargar el código en cualquiera de los dos lenguajes."
+                techs={["preact", "tailwind", "Markdown"]}
+                image="/project-2.webp"
+                link="https://dr4fty-md-viewer.vercel.app/"
+                repoLink="https://github.com/mperezpizarro/md-viewer"
+            />
+            <ProjectCard
+                name="Fichas de doblaje"
+                description="Sitio web que muestra datos obtenidas a través de una API programada específicamente para esta página. Permite además buscar por título y filtrar por idioma."
+                techs={["vue", "nuxt", "tailwind", "API"]}
+                image="/project-3.webp"
+                link="https://fichas-doblaje.vercel.app/"
+                repoLink="https://github.com/mperezpizarro/fichas-doblaje"
             />
         </div>
     </Container>
