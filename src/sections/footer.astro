@@ -3,9 +3,12 @@ import Container from "../components/Container.astro"
 import GithubIcon from "../components/icons/GithubIcon.astro"
 import MailIcon from "../components/icons/MailIcon.astro"
 import DownloadIcon from "../components/icons/DownloadIcon.astro"
+import AstroIcon from "../components/icons/AstroIcon.astro"
+import VueIcon from "../components/icons/VueIcon.astro"
+import TailwindIcon from "../components/icons/TailwindIcon.astro"
 ---
 
-<footer class="w-full flex items-center mt-10 border-t border-cGray/50 bg-cGray/20">
+<footer class="w-full flex items-center mt-20 border-t border-cGray/50 bg-cGray/20">
     <Container>
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-slate-100">
             <ul>
@@ -68,6 +71,14 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro"
                     </a>
                 </li>
             </ul>
+        </section>
+        <section class="flex flex-col items-center justify-center text-center py-6 text-slate-100 text-lg font-medium">
+            <p>Portfolio creado con:</p>
+            <div class="flex items-center gap-x-2 mt-4 mb-1 text-5xl">
+                <AstroIcon />
+                <TailwindIcon />
+                <VueIcon />
+            </div>
         </section>
     </Container>
 </footer>
